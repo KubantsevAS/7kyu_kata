@@ -19,14 +19,14 @@ function sumMaxMin(array){
     
     // минимальный элемент массива:
     
-  const minInArray = array.split(' ').reduce((minItem, item) => {
-  	if (item < minItem){
-    	return +item;
-    	}
-    return +minItem;
-    }, array[0]);
-    
-  return minInArray + maxInArray;
+	const minInArray = array.split(' ').reduce((minItem, item) => {
+  		if (item < minItem){
+    		return +item;
+    		}
+	return +minItem;
+	}, array[0]);
+	
+	return minInArray + maxInArray;
 }
 let ask = prompt('Введите массив чисел', );
 alert(sumMaxMin(ask));
