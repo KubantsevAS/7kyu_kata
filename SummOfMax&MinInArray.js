@@ -28,5 +28,5 @@ function sumMaxMin(array){
 	
 	return minInArray + maxInArray;
 }
-let ask = prompt('Введите массив чисел', );
-alert(sumMaxMin(ask));
+let inputNum = prompt('Введите массив чисел', );
+alert(sumMaxMin(inputNum));
