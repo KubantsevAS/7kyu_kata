@@ -5,26 +5,26 @@ function sumMaxMin(array){
 	// проверяем условие, равна ли длина массива 1
 
 	if (array.length === 1){
-  	return array[0];
+  		return array[0];
   	}
   
   // максимальный элемент массива:
   
 	const maxInArray = array.split(' ').reduce((maxItem, item) => {
 		if (item > maxItem) {
-  		return +item;
+  			return +item;
   		}
-   	return +maxItem;
-  	}, array[0]);
+   		return +maxItem;
+  		}, array[0]);
     
     // минимальный элемент массива:
     
 	const minInArray = array.split(' ').reduce((minItem, item) => {
   		if (item < minItem){
-    		return +item;
+    			return +item;
     		}
-	return +minItem;
-	}, array[0]);
+		return +minItem;
+		}, array[0]);
 	
 	return minInArray + maxInArray;
 }
