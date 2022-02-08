@@ -14,5 +14,5 @@ function validateWord(s) {
     checkArray.push(checkWord[objectKey]);
   }
   
-  return checkArray.map((item, index, array) => array[index] !== array[0] ? 0 : 1).find((item) => item == 0) == 0 ? false : true;
+  return checkArray.map((item, index, array) => array[index] !== array[0] ? 0 : 1).find((item) => item == 0) !== 0;
 } 
