@@ -1,14 +1,18 @@
 // функция для нахождения суммы наибольшего и наименьшего элемента массива
 
 function sumMaxMin(array){
-
-	// проверяем условие, равна ли длина массива 1
-
 	if (array.length === 1){
   		return array[0];
   	}
+	let result = array.split(' ').map(Number).sort((a, b) => a - b); 
+	return result[0] + result[result.length - 1];
+}
+let inputNum = prompt('Введите массив чисел', );
+alert(sumMaxMin(inputNum));
+
+  /* old solution
   
-  // максимальный элемент массива:
+	максимальный элемент массива:
   
 	const maxInArray = array.split(' ').reduce((maxItem, item) => {
 		if (item > maxItem) {
@@ -17,7 +21,7 @@ function sumMaxMin(array){
    		return +maxItem;
   		}, array[0]);
     
-    // минимальный элемент массива:
+	минимальный элемент массива:
     
 	const minInArray = array.split(' ').reduce((minItem, item) => {
   		if (item < minItem){
@@ -28,5 +32,4 @@ function sumMaxMin(array){
 	
 	return minInArray + maxInArray;
 }
-let inputNum = prompt('Введите массив чисел', );
-alert(sumMaxMin(inputNum));
+*/
